@@ -1,0 +1,51 @@
+{
+  "name": "artha-network",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multi-service Solana escrow ecosystem",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "node scripts/cleanup.js && npx concurrently -n \"validator,deploy,actions,web\" -c \"yellow,magenta,green,blue\" \"npm run dev:validator\" \"npm run dev:deploy-wait\" \"npm run dev:actions\" \"npm run dev:web\"",
+    "cleanup": "node scripts/cleanup.js",
+    "dev:reset": "node scripts/cleanup.js && npx concurrently -n \"validator,deploy,actions,web\" -c \"yellow,magenta,green,blue\" \"npm run dev:validator:reset\" \"npm run dev:deploy-wait\" \"npm run dev:actions\" \"npm run dev:web\"",
+    "dev:orchestrated": "wsl -d Ubuntu -e bash -c \"pkill -f solana-test-validator || true\" && node dev-start.js",
+    "dev:validator": "wsl -d Ubuntu -e bash -c \"export PATH=~/.local/share/solana/install/active_release/bin:$PATH && cd /mnt/e/Artha-Network/onchain-escrow && solana-test-validator --reset --quiet\"",
+    "dev:validator:reset": "wsl -d Ubuntu -e bash -c \"export PATH=~/.local/share/solana/install/active_release/bin:$PATH && cd /mnt/e/Artha-Network/onchain-escrow && solana-test-validator --reset --quiet\"",
+    "dev:deploy-wait": "node -e \"const delay = (ms) => new Promise(r => setTimeout(r, ms)); (async () => { console.log('⏳ Waiting for validator...'); await delay(15000); console.log('🚀 Deploying program...'); })().then(() => process.exit(0))\" && npm run deploy:local",
+    "dev:actions": "node -e \"setTimeout(() => {}, 10000)\" && cd ../actions-server && npm run dev",
+    "dev:web": "node -e \"setTimeout(() => {}, 10000)\" && cd ../web-app && npm run dev",
+    "build": "npm run build:anchor && npm run build:services",
+    "build:all": "npm run build:anchor && npm run deploy:local && npm run build:services",
+    "build:services": "npm run build --prefix ../actions-server && npm run build --prefix ../web-app",
+    "build:anchor": "wsl -d Ubuntu -e bash -c \"export PATH=~/.cargo/bin:~/.local/share/solana/install/active_release/bin:$PATH && cd /mnt/e/Artha-Network/onchain-escrow && ~/.avm/bin/anchor-0.32.1 build && cp programs/onchain_escrow/target/deploy/onchain_escrow.so target/deploy/\"",
+    "deploy:local": "wsl -d Ubuntu -e bash -c \"export PATH=~/.cargo/bin:~/.local/share/solana/install/active_release/bin:$PATH && cd /mnt/e/Artha-Network/onchain-escrow && ~/.avm/bin/anchor-0.32.1 deploy --program-name onchain_escrow --program-keypair target/deploy/onchain_escrow-keypair.json\"",
+    "deploy:devnet": "wsl -d Ubuntu -e bash -c \"export PATH=~/.cargo/bin:~/.local/share/solana/install/active_release/bin:$PATH && cd /mnt/e/Artha-Network/onchain-escrow && ~/.avm/bin/anchor-0.32.1 deploy --provider.cluster devnet\"",
+    "setup": "npm install && npm install --prefix ../actions-server && npm install --prefix ../web-app && npm install --prefix ../arbiter-service",
+    "setup:full": "npm run setup && npm run build:anchor",
+    "setup:wsl": "wsl -d Ubuntu -e bash -c \"cd /mnt/e/Artha-Network && chmod +x setup-wsl.sh && ./setup-wsl.sh\"",
+    "prebuild": "echo '🔨 Building Solana program and services...'",
+    "postbuild": "echo '✅ Build complete!'",
+    "predeploy:local": "echo '🚀 Deploying to local validator...'",
+    "postdeploy:local": "echo '✅ Deployment complete! Program ID: E4Vq17qHGG1PFr5h6vZdQUb3nxhjJB9dwMijiVdxfZLd'",
+    "predev": "echo '🧹 Cleaning up previous processes...' && echo '🏃 Starting all services (validator → deploy → servers)...'",
+    "clean": "wsl -d Ubuntu -e bash -c \"export PATH=~/.local/share/solana/install/active_release/bin:$PATH && cd /mnt/e/Artha-Network/onchain-escrow && ~/.avm/bin/anchor-0.32.1 clean\" && cd ../actions-server && npm run clean && cd ../web-app && npm run clean",
+    "clean:all": "npm run clean && rm -rf node_modules ../actions-server/node_modules ../web-app/node_modules",
+    "test": "wsl -d Ubuntu -e bash -c \"export PATH=~/.cargo/bin:~/.local/share/solana/install/active_release/bin:$PATH && cd /mnt/e/Artha-Network/onchain-escrow && ~/.avm/bin/anchor-0.32.1 test\"",
+    "test:local": "wsl -d Ubuntu -e bash -c \"export PATH=~/.cargo/bin:~/.local/share/solana/install/active_release/bin:$PATH && cd /mnt/e/Artha-Network/onchain-escrow && ~/.avm/bin/anchor-0.32.1 test --skip-local-validator\"",
+    "check:env": "echo '📋 Checking environment...' && npm run check:wsl",
+    "check:wsl": "wsl -d Ubuntu -e bash -c \"export PATH=~/.cargo/bin:~/.local/share/solana/install/active_release/bin:$PATH && echo 'WSL Environment:' && echo '  Rust:' && rustc --version && echo '  Solana CLI:' && solana --version && echo '  Anchor:' && ~/.avm/bin/anchor-0.32.1 --version\"",
+    "airdrop": "echo '⚠️  This airdrops to test wallet 4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648' && echo 'To airdrop to YOUR Phantom wallet, copy your address from the browser and run:' && echo 'npm run airdrop:custom -- <YOUR_WALLET_ADDRESS> 10' && echo '' && wsl -d Ubuntu -e bash -c \"export PATH=~/.local/share/solana/install/active_release/bin:$PATH && echo 'Airdropping 10 SOL to test wallet...' && solana airdrop 10 4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648 --url http://localhost:8899 && echo 'Done! Test wallet balance:' && solana balance 4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648 --url http://localhost:8899\"",
+    "airdrop:custom": "node scripts/airdrop-to-wallet.js",
+    "logs:validator": "wsl -d Ubuntu -e bash -c \"export PATH=~/.local/share/solana/install/active_release/bin:$PATH && solana logs --url http://localhost:8899\"",
+    "localnet:bootstrap": "node scripts/localnet-bootstrap.js",
+    "info": "echo '📦 Artha Network - Solana Escrow Platform' && echo '' && echo 'Available Commands:' && echo '  npm start              - Start all services (validator + auto-deploy + servers)' && echo '  npm run build:all      - Build Solana program and deploy to local validator' && echo '  npm run setup:full     - Install dependencies and build program' && echo '  npm run airdrop        - Airdrop 10 SOL to test wallet' && echo '  npm run localnet:bootstrap [seller] [buyer]  - Create USDC mint, fund wallets, set env' && echo '  npm run check:env      - Verify WSL environment' && echo '' && echo 'Development:' && echo '  Validator:      http://localhost:8899' && echo '  Actions Server: http://localhost:4000' && echo '  Web App:        http://localhost:8081' && echo '  Program ID:     E4Vq17qHGG1PFr5h6vZdQUb3nxhjJB9dwMijiVdxfZLd' && echo '' && echo '⚡ Program auto-deploys after validator starts!'"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "workspaces": [
+    "../actions-server",
+    "../web-app",
+    "../onchain-escrow"
+  ]
+}
