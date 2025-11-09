@@ -213,4 +213,8 @@ VITE_SUPABASE_URL=https://xwsinvputbgrifvxjehf.supabase.co
 - **Networking**: WSL services are accessible from Windows via localhost
 - **Performance**: Building Rust/Anchor programs is much faster in WSL
 - **Tools**: Use WSL for Solana CLI, Anchor CLI, and cargo commands
+<<<<<<< HEAD
 - **IDE**: You can still use Windows-based IDEs; they work with WSL projects
+=======
+- **IDE**: You can still use Windows-based IDEs; they work with WSL projects
+>>>>>>> 2c77ddb (fixed action-server issue caused due to file address issue)

@@ -60,4 +60,8 @@ try {
   console.error('❌ Airdrop failed!');
   console.error('   Make sure the local validator is running: npm run dev:validator');
   process.exit(1);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2c77ddb (fixed action-server issue caused due to file address issue)

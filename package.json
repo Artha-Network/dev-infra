@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
+<<<<<<< HEAD
   },
   "workspaces": [
     "../actions-server",
@@ -49,3 +50,7 @@
     "../onchain-escrow"
   ]
 }
+=======
+  }
+}
+>>>>>>> 2c77ddb (fixed action-server issue caused due to file address issue)
