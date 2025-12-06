@@ -1,164 +1,243 @@
 #!/usr/bin/env node
 
 /**
- * Development orchestration script for Artha Network
- * Starts services in order: validator -> actions-server -> web-app
+ * Artha Network - Development Orchestrator
+ * Usage: node dev-start.js [--network=localnet|devnet]
  */
 
-const { spawn } = require("child_process");
+const { spawn, execSync } = require("child_process");
 const path = require("path");
+const fs = require("fs");
+
+// Parse arguments
+const args = process.argv.slice(2);
+const networkArg = args.find(arg => arg.startsWith("--network="));
+const NETWORK = networkArg ? networkArg.split("=")[1] : "localnet";
 
 const COLORS = {
   reset: "\x1b[0m",
   bright: "\x1b[1m",
-  yellow: "\x1b[33m",
   green: "\x1b[32m",
   blue: "\x1b[34m",
+  cyan: "\x1b[36m",
   red: "\x1b[31m",
+  yellow: "\x1b[33m",
+  magenta: "\x1b[35m",
 };
 
 function log(service, message, color = COLORS.reset) {
-  const timestamp = new Date().toISOString().substr(11, 8);
-  console.log(`${color}[${timestamp}] [${service}]${COLORS.reset} ${message}`);
+  const time = new Date().toISOString().substr(11, 8);
+  console.log(`${color}[${time}] [${service}]${COLORS.reset} ${message}`);
+}
+
+function loadEnv(envPath) {
+  if (!fs.existsSync(envPath)) return {};
+  const env = {};
+  const content = fs.readFileSync(envPath, "utf-8").replace(/\0/g, "");
+  content.split("\n").forEach(line => {
+    const trimmed = line.trim();
+    if (trimmed && !trimmed.startsWith("#")) {
+      const [key, ...valueParts] = trimmed.split("=");
+      if (key && valueParts.length > 0) {
+        env[key.trim()] = valueParts.join("=").trim().replace(/^["']|["']$/g, "");
+      }
+    }
+  });
+  return env;
 }
 
 function startService(name, command, args, options = {}) {
   return new Promise((resolve, reject) => {
     log(name, `Starting: ${command} ${args.join(" ")}`, COLORS.bright);
 
-    const process = spawn(command, args, {
+    // Load service-specific .env file if cwd is provided
+    let serviceEnv = {};
+    if (options.cwd) {
+      const envPath = path.join(options.cwd, ".env");
+      serviceEnv = loadEnv(envPath);
+    }
+
+    const proc = spawn(command, args, {
       stdio: "pipe",
       shell: true,
       ...options,
+      env: { ...process.env, ...serviceEnv, ...options.env },
     });
 
-    process.stdout.on("data", (data) => {
-      const message = data.toString().trim();
-      if (message) {
-        log(name, message, options.color || COLORS.reset);
-      }
-    });
-
-    process.stderr.on("data", (data) => {
-      const message = data.toString().trim();
-      if (message) {
-        log(name, `ERROR: ${message}`, COLORS.red);
-      }
-    });
-
-    process.on("close", (code) => {
-      if (code === 0) {
-        log(name, "Process exited successfully", COLORS.green);
-        resolve();
-      } else {
-        log(name, `Process exited with code ${code}`, COLORS.red);
-        reject(new Error(`${name} failed with code ${code}`));
-      }
-    });
-
-    // For long-running services, resolve when they start listening
-    if (options.waitForMessage) {
-      process.stdout.on("data", (data) => {
-        if (data.toString().includes(options.waitForMessage)) {
-          log(name, "Service ready!", COLORS.green);
-          resolve(process);
+    proc.stdout.on("data", (data) => {
+      const msg = data.toString().trim();
+      if (msg) {
+        log(name, msg, options.color || COLORS.reset);
+        if (options.waitForMessage && msg.includes(options.waitForMessage)) {
+          log(name, "✓ Ready", COLORS.green);
+          resolve(proc);
         }
-      });
-    }
+      }
+    });
 
-    return process;
+    proc.stderr.on("data", (data) => {
+      const msg = data.toString().trim();
+      if (msg) log(name, msg, COLORS.red);
+    });
+
+    proc.on("close", (code) => {
+      if (code !== 0) {
+        log(name, `Exited with code ${code}`, COLORS.red);
+        if (!options.waitForMessage) {
+          reject(new Error(`${name} failed`));
+        }
+      } else {
+        if (!options.waitForMessage) resolve(proc);
+      }
+    });
   });
 }
 
-async function startDevelopment() {
-  try {
-    log(
-      "SYSTEM",
-      "Starting Artha Network development environment...",
-      COLORS.bright
-    );
+function killPort(port) {
+  return new Promise((resolve) => {
+    const cmd = process.platform === 'win32'
+      ? `netstat -ano | findstr :${port}`
+      : `lsof -ti:${port}`;
 
-    // 1. Start Solana test validator in WSL
-    log(
-      "SYSTEM",
-      "Step 1: Starting Solana test validator in WSL...",
-      COLORS.yellow
-    );
-    const validatorProcess = await startService(
-      "validator",
-      "wsl",
-      [
-        "-d",
-        "Ubuntu",
-        "-e",
-        "bash",
-        "-c",
-        "export PATH=~/.local/share/solana/install/active_release/bin:$PATH && cd /mnt/e/Artha-Network/onchain-escrow && solana-test-validator --reset --quiet",
-      ],
-      {
-        color: COLORS.yellow,
-        waitForMessage: "Waiting for RPC connection",
+    require('child_process').exec(cmd, (err, stdout) => {
+      if (err || !stdout) {
+        resolve();
+        return;
       }
-    );
+      const lines = stdout.trim().split('\n');
+      const pids = new Set();
+      lines.forEach(line => {
+        const match = line.match(/\s+(\d+)\s*$/);
+        if (match) pids.add(match[1]);
+      });
+      if (pids.size === 0) {
+        resolve();
+        return;
+      }
+      const killCmd = process.platform === 'win32'
+        ? `taskkill /F /PID ${Array.from(pids).join(' /PID ')}`
+        : `kill -9 ${Array.from(pids).join(' ')}`;
 
-    // Wait a bit for validator to fully initialize
-    await new Promise((resolve) => setTimeout(resolve, 3000));
+      require('child_process').exec(killCmd, () => {
+        log("SYSTEM", `Killed process on port ${port}`, COLORS.yellow);
+        setTimeout(resolve, 500);
+      });
+    });
+  });
+}
 
-    // 2. Start actions server
-    log("SYSTEM", "Step 2: Starting actions server...", COLORS.green);
-    const actionsProcess = await startService(
+async function start() {
+  const processes = [];
+
+  try {
+    log("SYSTEM", `🚀 Starting Artha Network (${NETWORK.toUpperCase()})`, COLORS.bright);
+
+    // Kill processes on required ports
+    log("SYSTEM", "Cleaning up ports...", COLORS.yellow);
+    await Promise.all([
+      killPort(4000),
+      killPort(3001),
+      killPort(8081)
+    ]);
+
+    const RPC_URL = NETWORK === "devnet"
+      ? "https://api.devnet.solana.com"
+      : "http://127.0.0.1:8899";
+
+    // 0. Deploy (Devnet only)
+    if (NETWORK === "devnet" && !process.env.SKIP_DEPLOY) {
+      log("SYSTEM", "Step 0: Deploying program to Devnet...", COLORS.magenta);
+      try {
+        // Use relative path for cross-platform compatibility
+        const escrowDir = path.resolve(__dirname, "../onchain-escrow");
+        // Convert to WSL path if on Windows for the wsl command
+        // This is a bit hacky but keeps the existing wsl logic working
+        // A better approach would be to run anchor directly if installed on Windows
+        const wslEscrowPath = `/mnt/${escrowDir.replace(":", "").replace(/\\/g, "/").toLowerCase()}`;
+
+        await startService(
+          "deploy",
+          "wsl",
+          [
+            "-d", "Ubuntu",
+            "-e", "bash", "-c",
+            `export PATH=~/.cargo/bin:~/.local/share/solana/install/active_release/bin:$PATH && cd ${wslEscrowPath} && ~/.avm/bin/anchor-0.32.1 deploy --provider.cluster devnet`
+          ],
+          { color: COLORS.magenta }
+        );
+      } catch (e) {
+        log("SYSTEM", `Deployment failed or skipped: ${e.message}`, COLORS.red);
+        log("SYSTEM", "Continuing anyway...", COLORS.yellow);
+      }
+    }
+
+    // 1. Actions Server
+    const actions = await startService(
       "actions",
-      "npm",
-      ["run", "dev"],
+      "npm", ["run", "dev"],
       {
         cwd: path.join(__dirname, "../actions-server"),
-        color: COLORS.green,
         waitForMessage: "listening on http://localhost:4000",
+        color: COLORS.green,
+        env: {
+          SOLANA_CLUSTER: NETWORK,
+          SOLANA_RPC_URL: RPC_URL
+        }
       }
     );
+    processes.push(actions);
+    await new Promise(r => setTimeout(r, 2000));
 
-    // Wait a bit for actions server to be ready
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    // 2. Arbiter Service
+    const arbiter = await startService(
+      "arbiter",
+      "npm", ["run", "dev"],
+      {
+        cwd: path.join(__dirname, "../arbiter-service"),
+        waitForMessage: "running on port",
+        color: COLORS.cyan
+      }
+    );
+    processes.push(arbiter);
+    await new Promise(r => setTimeout(r, 2000));
 
-    // 3. Start web app
-    log("SYSTEM", "Step 3: Starting web application...", COLORS.blue);
-    const webProcess = await startService("web", "npm", ["run", "dev"], {
-      cwd: path.join(__dirname, "../web-app"),
-      color: COLORS.blue,
-      waitForMessage: "Local:",
-    });
+    // 3. Web App
+    const web = await startService(
+      "web",
+      "npm", ["run", "dev"],
+      {
+        cwd: path.join(__dirname, "../web-app"),
+        waitForMessage: "Local:",
+        color: COLORS.blue,
+        env: {
+          VITE_SOLANA_RPC: RPC_URL
+        }
+      }
+    );
+    processes.push(web);
 
-    log("SYSTEM", "🚀 All services started successfully!", COLORS.bright);
-    log("SYSTEM", "📊 Validator: http://localhost:8899", COLORS.yellow);
-    log("SYSTEM", "🔧 Actions API: http://localhost:4000", COLORS.green);
+    log("SYSTEM", "✅ All services running!", COLORS.bright);
+    log("SYSTEM", "🔧 Actions: http://localhost:4000", COLORS.green);
+    log("SYSTEM", "🤖 Arbiter: http://localhost:3001", COLORS.cyan);
     log("SYSTEM", "🌐 Web App: http://localhost:8081", COLORS.blue);
-    log("SYSTEM", "Press Ctrl+C to stop all services", COLORS.bright);
+    log("SYSTEM", "Press Ctrl+C to stop", COLORS.bright);
 
-    // Handle shutdown
     process.on("SIGINT", () => {
-      log("SYSTEM", "Shutting down all services...", COLORS.bright);
-
-      if (webProcess && webProcess.kill) webProcess.kill();
-      if (actionsProcess && actionsProcess.kill) actionsProcess.kill();
-      if (validatorProcess && validatorProcess.kill) validatorProcess.kill();
-
+      log("SYSTEM", "Shutting down...", COLORS.bright);
+      processes.forEach(p => p && p.kill && p.kill());
       setTimeout(() => process.exit(0), 1000);
     });
 
-    // Keep the script running
-    await new Promise(() => {}); // infinite wait
+    await new Promise(() => { });
   } catch (error) {
-    log(
-      "SYSTEM",
-      `Failed to start development environment: ${error.message}`,
-      COLORS.red
-    );
+    log("SYSTEM", `Failed: ${error.message}`, COLORS.red);
+    processes.forEach(p => p && p.kill && p.kill());
     process.exit(1);
   }
 }
 
 if (require.main === module) {
-  startDevelopment();
+  start();
 }
 
-module.exports = { startDevelopment };
+module.exports = { start };

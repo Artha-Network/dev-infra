@@ -54,6 +54,21 @@ This will start:
 
 > **Note**: The validator automatically resets on each start to prevent state corruption issues.
 
+### Devnet Development
+
+To test against Solana Devnet instead of a local validator:
+
+```bash
+npm run dev:devnet
+```
+
+This will:
+1. Deploy the program to Devnet (if configured in `Anchor.toml`)
+2. Start Actions Server pointing to Devnet RPC
+3. Start Web App pointing to Devnet RPC
+4. Start Arbiter Service
+
+
 ## Individual Services
 
 ### Start Services Separately
@@ -66,7 +81,11 @@ npm run dev:validator
 npm run dev:actions
 
 # Start only the web app
+# Start only the web app
 npm run dev:web
+
+# Start all services on Devnet
+npm run dev:devnet
 ```
 
 ### Setup Commands
@@ -113,6 +132,7 @@ npm run deploy:devnet
 | -------------- | ---- | ---------- | -------------------------------- |
 | Test Validator | 8899 | WSL Ubuntu | Local Solana blockchain          |
 | Actions Server | 4000 | Windows    | Backend API & Solana integration |
+| Arbiter Service| 3001 | Windows    | AI Dispute Resolution            |
 | Web App        | 8081 | Windows    | React frontend                   |
 
 ## Environment Setup
@@ -213,8 +233,4 @@ VITE_SUPABASE_URL=https://xwsinvputbgrifvxjehf.supabase.co
 - **Networking**: WSL services are accessible from Windows via localhost
 - **Performance**: Building Rust/Anchor programs is much faster in WSL
 - **Tools**: Use WSL for Solana CLI, Anchor CLI, and cargo commands
-<<<<<<< HEAD
 - **IDE**: You can still use Windows-based IDEs; they work with WSL projects
-=======
-- **IDE**: You can still use Windows-based IDEs; they work with WSL projects
->>>>>>> 2c77ddb (fixed action-server issue caused due to file address issue)
