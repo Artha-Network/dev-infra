@@ -1,0 +1,593 @@
+
+> actions-server@1.0.0 dev
+> tsx watch server.ts
+
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+[actions-server] listening on http://localhost:4000
+[actions-server] RPC URL: https://api.devnet.solana.com
+
+> actions-server@1.0.0 dev
+> tsx watch server.ts
+
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+[actions-server] listening on http://localhost:4000
+[actions-server] RPC URL: https://api.devnet.solana.com
+
+> actions-server@1.0.0 dev
+> tsx watch server.ts
+
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+[actions-server] listening on http://localhost:4000
+[actions-server] RPC URL: https://api.devnet.solana.com
+
+> actions-server@1.0.0 dev
+> tsx watch server.ts
+
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+[actions-server] listening on http://localhost:4000
+[actions-server] RPC URL: https://api.devnet.solana.com
+
+> actions-server@1.0.0 dev
+> tsx watch server.ts
+
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+[actions-server] listening on http://localhost:4000
+[actions-server] RPC URL: https://api.devnet.solana.com
+
+> actions-server@1.0.0 dev
+> tsx watch server.ts
+
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+[actions-server] listening on http://localhost:4000
+[actions-server] RPC URL: https://api.devnet.solana.com
+
+> actions-server@1.0.0 dev
+> tsx watch server.ts
+
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+[actions-server] listening on http://localhost:4000
+[actions-server] RPC URL: https://api.devnet.solana.com
+
+> actions-server@1.0.0 dev
+> tsx watch server.ts
+
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+[actions-server] listening on http://localhost:4000
+[actions-server] RPC URL: https://api.devnet.solana.com
+
+> actions-server@1.0.0 dev
+> tsx watch server.ts
+
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+[actions-server] listening on http://localhost:4000
+[actions-server] RPC URL: https://api.devnet.solana.com
+📊 Event tracked: { event: 'view_home', ts: 1765075785810 }
+📊 Event tracked: {
+  event: 'view_home',
+  user_id: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648',
+  ts: 1765075786473
+}
+📊 Event tracked: {
+  event: 'cta_get_started',
+  user_id: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648',
+  ts: 1765075787324,
+  extras: { cta_type: 'connect_wallet', source: 'hero_button' }
+}
+📊 Event tracked: {
+  event: 'wallet_verification_attempt',
+  user_id: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648',
+  ts: 1765075789881,
+  extras: { wallet_address: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648' }
+}
+📊 Event tracked: {
+  event: 'wallet_connected',
+  user_id: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648',
+  ts: 1765075789883,
+  extras: {
+    wallet_type: 'Phantom',
+    network: 'devnet',
+    wallet_address: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648'
+  }
+}
+📊 Event tracked: {
+  event: 'wallet_signature_success',
+  user_id: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648',
+  ts: 1765075797373,
+  extras: { wallet_address: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648' }
+}
+📊 Event tracked: {
+  event: 'wallet_connection_complete',
+  user_id: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648',
+  ts: 1765075797668,
+  extras: {
+    wallet_address: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648',
+    user_id: '06af55fc-c018-47d9-bcc1-1864cfa77bba'
+  }
+}
+📊 Event tracked: {
+  event: 'deal_delete_click',
+  user_id: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648',
+  ts: 1765075828428,
+  extras: { deal_id: '2266d10a-6f23-e8b7-7534-379135ec96fc' }
+}
+📊 Event tracked: {
+  event: 'deal_delete_click',
+  user_id: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648',
+  ts: 1765075832223,
+  extras: { deal_id: 'cbe53cf3-25a5-6ea4-dce3-ef4cbce23a7b' }
+}
+📊 Event tracked: {
+  event: 'deal_draft_started',
+  user_id: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648',
+  ts: 1765075842402
+}
+📊 Event tracked: {
+  event: 'deal_draft_submitted',
+  user_id: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648',
+  ts: 1765075844922,
+  extras: {
+    amount: 10,
+    has_description: true,
+    funding_deadline_hours: 122,
+    completion_deadline_hours: 137
+  }
+}
+📊 Event tracked: {
+  event: 'view_funding',
+  user_id: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648',
+  ts: 1765075847847,
+  extras: { amount: '', counterparty: '', funding_method: 'Wallet' }
+}
+📊 Event tracked: {
+  event: 'view_funding',
+  user_id: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648',
+  ts: 1765075847861,
+  extras: {
+    amount: 10,
+    counterparty: 'J5VHnSRxVizNgT6xCmoBNnXPU7EDfYJ9xvRjYTK5Xppo',
+    funding_method: 'Wallet'
+  }
+}
+📊 Event tracked: {
+  event: 'fund_attempt',
+  user_id: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648',
+  ts: 1765075849987,
+  extras: { amount: 10, platform_fee: 0.05, total_cost: 10.05 }
+}
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query SELECT "public"."deals"."id", "public"."deals"."status"::text, "public"."deals"."buyer_wallet", "public"."deals"."seller_wallet", "public"."deals"."arbiter_pubkey", "public"."deals"."price_usd", "public"."deals"."deposit_token_mint", "public"."deals"."vault_ata", "public"."deals"."onchain_address", "public"."deals"."deliver_deadline", "public"."deals"."dispute_deadline", "public"."deals"."created_at", "public"."deals"."updated_at", "public"."deals"."funded_at" FROM "public"."deals" WHERE ("public"."deals"."id" = $1 AND 1=1) LIMIT $2 OFFSET $3
+prisma:query COMMIT
+prisma:query BEGIN
+prisma:query DEALLOCATE ALL
+prisma:query INSERT INTO "public"."deals" ("id","seller_id","buyer_id","seller_wallet","buyer_wallet","arbiter_pubkey","onchain_address","price_usd","deposit_token_mint","vault_ata","status","deliver_deadline","dispute_deadline","usd_price_snapshot","fee_bps","created_at","updated_at") VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,CAST($11::text AS "public"."deal_status"),$12,$13,$14,$15,$16,$17) RETURNING "public"."deals"."id", "public"."deals"."seller_id", "public"."deals"."buyer_id", "public"."deals"."seller_wallet", "public"."deals"."buyer_wallet", "public"."deals"."arbiter_pubkey", "public"."deals"."onchain_address", "public"."deals"."title", "public"."deals"."price_usd", "public"."deals"."deposit_token_mint", "public"."deals"."vault_ata", "public"."deals"."status"::text, "public"."deals"."deliver_deadline", "public"."deals"."dispute_deadline", "public"."deals"."usd_price_snapshot", "public"."deals"."fee_bps", "public"."deals"."created_at", "public"."deals"."funded_at", "public"."deals"."updated_at"
+prisma:query COMMIT
+Initiate Transaction Keys:
+Seller: 4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648
+Buyer: J5VHnSRxVizNgT6xCmoBNnXPU7EDfYJ9xvRjYTK5Xppo
+Arbiter: 4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648
+Mint: HtwMqN2J68df7y9q8G1mLKbgfXJ6vEvBns7agrFHKHjQ
+Escrow PDA: 8zZ7GFbtK8Yipcd9EPAD5cUw77MyCW2PPvV8r8ARV3hK
+{"level":"info","reqId":"8d27cf23-820c-4973-a5a4-26c47b5caa51","action":"actions.initiate","dealId":"100a7653-1a2b-36bc-a76d-762a6e817c85","wallet":"4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648","status":"INIT","durationMs":1616}
+📊 Event tracked: {
+  event: 'fund_failed',
+  user_id: '4ks9t8YttMHYxMmkKXyPVRYQj7mnhWpFEPse6yiy5648',
+  ts: 1765075855635,
+  extras: {
+    error: 'Simulation failed. \n' +
+      'Message: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1004. \n' +
+      'Logs: \n' +
+      '[\n' +
+      '  "Program 8HT9LQo8KAtL9kyP4q3pDqtHAc6dwmjSKcvs6XNxTQyC invoke [1]",\n' +
+      '  "Program log: AnchorError occurred. Error Code: DeclaredProgramIdMismatch. Error Number: 4100. Error Message: The declared program id does not match the actual program id.",\n' +
+      '  "Program 8HT9LQo8KAtL9kyP4q3pDqtHAc6dwmjSKcvs6XNxTQyC consumed 4410 of 200000 compute units",\n' +
+      '  "Program 8HT9LQo8KAtL9kyP4q3pDqtHAc6dwmjSKcvs6XNxTQyC failed: custom program error: 0x1004"\n' +
+      ']. \n' +
+      'Catch the `SendTransactionError` and call `getLogs()` on it for full details.',
+    amount: 10
+  }
+}
+9:01:30 PM [tsx] change in ./src\solana\transaction.ts Rerunning...
+9:01:30 PM [tsx] change in ./src\solana\transaction.ts Rerunning...
+9:01:30 PM [tsx] change in ./src\solana\transaction.ts Rerunning...
+ccc9:01:30 PM [tsx] change in ./src\solana\transaction.ts Rerunning...
+c9:01:33 PM [tsx] change in ./src\services\escrow-service.ts Restarting...
+9:01:33 PM [tsx] change in ./src\services\escrow-service.ts Restarting...
+9:01:33 PM [tsx] change in ./src\services\escrow-service.ts Restarting...
+9:01:33 PM [tsx] change in ./src\services\escrow-service.ts Restarting...
+cccc--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+9:08:45 PM [tsx] change in ./src\config\solana.ts Rerunning...
+c9:08:45 PM [tsx] change in ./src\config\solana.ts Rerunning...
+c9:08:45 PM [tsx] change in ./src\config\solana.ts Rerunning...
+c9:08:45 PM [tsx] change in ./src\config\solana.ts Rerunning...
+c[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+[actions-server] listening on http://localhost:4000
+[actions-server] RPC URL: https://api.devnet.solana.com
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+9:08:50 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+9:08:50 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+9:08:50 PM [tsx] change in ./src\services\escrow-service.ts Restarting...
+9:08:50 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+cccc[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+9:09:10 PM [tsx] change in ./src\solana\transaction.ts Rerunning...
+9:09:10 PM [tsx] change in ./src\solana\transaction.ts Rerunning...
+9:09:10 PM [tsx] change in ./src\solana\transaction.ts Rerunning...
+9:09:10 PM [tsx] change in ./src\solana\transaction.ts Rerunning...
+cccc[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+9:09:14 PM [tsx] change in ./src\services\escrow-service.ts Restarting...
+9:09:14 PM [tsx] change in ./src\services\escrow-service.ts Restarting...
+9:09:14 PM [tsx] change in ./src\services\escrow-service.ts Restarting...
+9:09:14 PM [tsx] change in ./src\services\escrow-service.ts Restarting...
+cccc[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+9:09:18 PM [tsx] change in ./src\solana\transaction.ts Restarting...
+9:09:18 PM [tsx] change in ./src\solana\transaction.ts Restarting...
+9:09:18 PM [tsx] change in ./src\solana\transaction.ts Restarting...
+9:09:18 PM [tsx] change in ./src\solana\transaction.ts Restarting...
+cccc[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+9:34:02 PM [tsx] change in ./src\config\solana.ts Rerunning...
+9:34:02 PM [tsx] change in ./src\config\solana.ts Rerunning...
+9:34:02 PM [tsx] change in ./src\config\solana.ts Rerunning...
+9:34:02 PM [tsx] change in ./src\config\solana.ts Rerunning...
+cccc[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+[actions-server] listening on http://localhost:4000
+[actions-server] RPC URL: https://api.devnet.solana.com
+--- Environment Validation ---
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+9:46:48 PM [tsx] change in ./src\config\solana.ts Rerunning...
+c9:46:48 PM [tsx] change in ./src\config\solana.ts Rerunning...
+9:46:48 PM [tsx] change in ./src\config\solana.ts Rerunning...
+cc9:46:48 PM [tsx] change in ./src\config\solana.ts Rerunning...
+c[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+[actions-server] listening on http://localhost:4000
+[actions-server] RPC URL: https://api.devnet.solana.com
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+10:41:19 PM [tsx] change in ./src\config\solana.ts Rerunning...
+10:41:19 PM [tsx] change in ./src\config\solana.ts Rerunning...
+10:41:19 PM [tsx] change in ./src\config\solana.ts Rerunning...
+10:41:19 PM [tsx] change in ./src\config\solana.ts Rerunning...
+cccc[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+--- Environment Validation ---
+--- Environment Validation ---
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+10:46:30 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+c10:46:30 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+10:46:30 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+c10:46:30 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+cc[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+11:03:46 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+c11:03:46 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+c11:03:46 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+11:03:46 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+cc[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+[actions-server] listening on http://localhost:4000
+[actions-server] RPC URL: https://api.devnet.solana.com
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+11:04:13 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+11:04:13 PM [tsx] change in ./src\services\escrow-service.ts Restarting...
+11:04:13 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+cc11:04:13 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+cc[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+[actions-server] listening on http://localhost:4000
+[actions-server] RPC URL: https://api.devnet.solana.com
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+11:05:43 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+c11:05:43 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+11:05:43 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+cc11:05:43 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+c[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+11:07:33 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+11:07:33 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+11:07:33 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+11:07:33 PM [tsx] change in ./src\services\escrow-service.ts Rerunning...
+cccc[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+[getConnection] using RPC https://api.devnet.solana.com/
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+[actions-server] listening on http://localhost:4000
+[actions-server] RPC URL: https://api.devnet.solana.com
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------
+--- Environment Validation ---
+Cluster: devnet
+Database URL: Remote
+✅ Environment configuration looks correct.
+------------------------------

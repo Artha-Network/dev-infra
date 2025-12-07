@@ -1,0 +1,1092 @@
+^C^C^C^Cnode:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
+node:events:485
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at Function.listen (E:\Artha-Network\actions-server\node_modules\express\lib\application.js:635:24)
+    at app (E:\Artha-Network\actions-server\server.ts:11:5)
+    at Object.<anonymous> (E:\Artha-Network\actions-server\server.ts:16:2)
+    at Module._compile (node:internal/modules/cjs/loader:1734:14)
+    at Object.transformer (E:\Artha-Network\actions-server\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v23.9.0
