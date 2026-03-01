@@ -2,7 +2,7 @@
 
 /**
  * Artha Network - Development Orchestrator
- * Usage: node dev-start.js [--network=localnet|devnet]
+ * Usage: node dev-start.js [--network=devnet]
  */
 
 const { spawn, execSync } = require("child_process");
@@ -12,7 +12,7 @@ const fs = require("fs");
 // Parse arguments
 const args = process.argv.slice(2);
 const networkArg = args.find(arg => arg.startsWith("--network="));
-const NETWORK = networkArg ? networkArg.split("=")[1] : "localnet";
+const NETWORK = networkArg ? networkArg.split("=")[1] : "devnet";
 
 const COLORS = {
   reset: "\x1b[0m",
@@ -140,36 +140,7 @@ async function start() {
       killPort(8081)
     ]);
 
-    const RPC_URL = NETWORK === "devnet"
-      ? "https://api.devnet.solana.com"
-      : "http://127.0.0.1:8899";
-
-    // 0. Deploy (Devnet only)
-    if (NETWORK === "devnet" && !process.env.SKIP_DEPLOY) {
-      log("SYSTEM", "Step 0: Deploying program to Devnet...", COLORS.magenta);
-      try {
-        // Use relative path for cross-platform compatibility
-        const escrowDir = path.resolve(__dirname, "../onchain-escrow");
-        // Convert to WSL path if on Windows for the wsl command
-        // This is a bit hacky but keeps the existing wsl logic working
-        // A better approach would be to run anchor directly if installed on Windows
-        const wslEscrowPath = `/mnt/${escrowDir.replace(":", "").replace(/\\/g, "/").toLowerCase()}`;
-
-        await startService(
-          "deploy",
-          "wsl",
-          [
-            "-d", "Ubuntu",
-            "-e", "bash", "-c",
-            `export PATH=~/.cargo/bin:~/.local/share/solana/install/active_release/bin:$PATH && cd ${wslEscrowPath} && ~/.avm/bin/anchor-0.32.1 deploy --provider.cluster devnet`
-          ],
-          { color: COLORS.magenta }
-        );
-      } catch (e) {
-        log("SYSTEM", `Deployment failed or skipped: ${e.message}`, COLORS.red);
-        log("SYSTEM", "Continuing anyway...", COLORS.yellow);
-      }
-    }
+    const RPC_URL = "https://api.devnet.solana.com";
 
     // 1. Actions Server
     const actions = await startService(
