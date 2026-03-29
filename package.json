@@ -16,6 +16,9 @@
     "setup:wsl": "wsl -d Ubuntu -e bash -c \"cd /mnt/e/Artha-Network && chmod +x setup-wsl.sh && ./setup-wsl.sh\"",
     "prebuild": "echo '🔨 Building Solana program and services...'",
     "postbuild": "echo '✅ Build complete!'",
+    "health": "node scripts/health-check.js",
+    "health:json": "node scripts/health-check.js --json",
+    "health:watch": "node scripts/health-check.js --watch 10",
     "check:env": "echo '📋 Checking environment...' && npm run check:wsl",
     "check:wsl": "wsl -d Ubuntu -e bash -c \"export PATH=~/.cargo/bin:~/.local/share/solana/install/active_release/bin:$PATH && echo 'WSL Environment:' && echo '  Rust:' && rustc --version && echo '  Solana CLI:' && solana --version && echo '  Anchor:' && ~/.avm/bin/anchor-0.32.1 --version\"",
     "info": "echo '📦 Artha Network - Solana Escrow Platform' && echo '' && echo 'Available Commands:' && echo '  npm start              - Start all services (Devnet)' && echo '  npm run build:all      - Build Solana program' && echo '  npm run setup:full     - Install dependencies and build program' && echo '  npm run deploy:devnet  - Deploy program to Devnet' && echo '  npm run check:env      - Verify WSL environment' && echo '' && echo 'Development:' && echo '  Actions Server: http://localhost:4000' && echo '  Web App:        http://localhost:8081' && echo '  Program ID:     E4Vq17qHGG1PFr5h6vZdQUb3nxhjJB9dwMijiVdxfZLd'"
